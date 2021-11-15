@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Working with Geodata inside Salesforce </title>
+	</head>
+    <style>
+        body {
+            width: 850px;
+            margin-left: 400px;
+            margin-right: 400px;
+        }
+        .page {
+            min-height: 700px;
+            border-width: 5px;
+            margin-top: 40px;
+            padding-left: 25px;
+            padding-top: 50px;            
+            border-color: blue;
+            background-color: cadetblue;
+
+        }
+
+    </style>
+
+	<body>
+        <div class="page">
+            <h1>
+                Working with Geodata inside Salesforce
+            </h1>
+            <p>
+                <img src="images/salesforcemaps.png" width="800px">
+            </p>
+            <p>
+                Sergey Rusetsky,<br>
+                Master of Science in GIS,<br>
+                Salesforce Developer at VRP Consulting
+            </p>
+        </div>
+
+
+        <div class="page">
+            <h1>What is Salesforce?</h1>
+            <p>
+                <img src="images/Salesforceanywhere-1024x640.jpg" width=800>
+            </p>
+            <ol>
+                <li>Company</li>
+                <li>Best and most used CRM</li>
+                <li>Great cloud platform for Web Development</li>
+            </ol>
+            <p>
+                One can compare Salesforce to Amazon.
+            </p>            
+        </div>
+
+        <div class="page">
+            <h1>
+                What is CRM? Why Salesforce is the best one?
+            </h1>
+            <p>
+                <img src="images/salesforce-classic.png" width="800px">
+            </p>
+        </div>
+
+        <div class="page">
+            <h1>
+                Salesforce as a Cloud platform
+            </h1>
+            <p>
+                What is a platform?
+            </p>
+            <p>
+                <img src="images/salesforce-platform.png" width="800px">
+            </p>
+            <h2>
+                Cloud types
+            </h2>
+            <ul>
+                <li>IAAS</li>
+                <li>PAAS</li>
+                <li>SAAS</li>
+            </ul>
+        </div>
+
+
+        <div class="page">
+            <h1>
+                Salesforce is not a GIS
+            </h1>
+            <p>
+                <img src="images/salesforce-spatial-data-types.jpg" width="800px">
+            </p>
+            <p>
+                But spatial data are so important by its nature, <br>
+                that Salesforce has several important buid in features 
+                for work with spatial data. <br>
+                They are:
+            </p>
+    
+            <ol>
+                <li>Address data type</li>
+                <li>Location data type</li>
+                <li>Location Class</li>
+            </ol>
+        </div>
+
+        <div class="page">
+            <h1>
+                Address data type
+            </h1>
+            <p>
+                <img src="images/address-compound-field.jpg" width="800px">
+            </p>
+            <p>
+                <a href="https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/compound_fields_address.htm">
+                    Documentation link
+                </a>
+            </p>
+            <p>
+                Note1: for some reason it is not normalized.
+            </p>
+            <p>
+                Note2: compound field type.
+            </p>
+        </div>
+
+        <div class="page">
+            <h1>
+                Location data type
+            </h1>
+            <p>
+                <img src="images/geolocation-compound-field.jpg" width="800px">
+            </p>
+            <a href="https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/compound_fields_geolocation.htm">
+                Documentation link
+            </a>
+            <p>
+                Note: compound data type as well
+            </p>
+        </div>
+
+        <div class="page">
+            <h1>
+                Location Class
+            </h1>
+            <p>
+                <img src="images/location-class.jpg" width="800px">
+            </p>
+            <a href="https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_class_system_Location.htm">
+                Documentation link
+            </a>            
+        </div>
+
+        <div class="page">
+            <h1>
+                Salesforce Maps
+            </h1>
+            <p>
+                <img src="images/salesforce-maps.jpg" width="800px">
+            </p>
+            <p>
+                Salesforce Maps - is additional platform feature (separate licence is needed).
+            </p>
+        </div>
+
+        <div class="page">
+            <h1>
+                Salesforce maps: the past
+            </h1>
+            <p>
+                <img src="images/salesforce-maps-old.jpg"  width="800px">
+            </p>
+            <p>
+                Previously Salesforce maps was wrapper on Google Maps.
+            </p>
+        </div>
+
+        <div class="page">
+            <h1>
+                Salesforce maps: current stage
+            </h1>
+            <h2>
+                Possible reasons of maps reinvention:
+            </h2>
+            <ul>
+                <li>Field Service Ligtning</li>
+                <li>Tableau</li>
+                <li>Covid-19</li>
+            </ul>
+
+            <p>
+                So new maps, based on ESRI procuct were integrated.
+            </p>
+    
+            <p>
+                <img src="images/salesforce-maps-new.png"  width="800px">
+            </p>
+        </div>
+        
+
+        <div class="page">
+            <h1>Salesforce projects</h1>
+            <p>
+                Salesforce allows to impmement any web-project.
+            </p>
+            <p>
+                <img src="images/salesforce-industries.jpg" width="800px">
+            </p>
+            <p>
+                Of course many of them are CRM related.
+            </p>
+            <p>
+                Personally, during my almost 5-year Experience in Salesforce, I've contributed to nearly dozen of projects.<br>
+                Two of them were a bit related to using spatial data.
+            </p>
+        </div>
+
+        <div class="page">
+            <h1>
+                Great Britain. Postcodes.
+            </h1>
+            <p>
+                <img src="images/postcodes.jpg" width="800px">
+            </p>
+            <p>
+                <a href="https://www.doogal.co.uk/">
+                    Nice example of British business: Privately owned. Opensource data. Profitable.
+                </a>
+            </p>
+            <p>
+                Notes (general knowledge):
+            </p>
+            <ul>
+                <li>Counties</li>
+                <li>British domains</li>
+            </ul>
+
+        </div>
+
+
+        
+        <div class="page">
+            <h1>
+                Hope for the future
+            </h1>
+    
+            <p>
+                <img src="images/hope-for-the-future.jpg" width="800px">
+            </p>
+            <p>
+                Postcodes. Task and Implementation details.
+            </p>
+    
+            <p>
+                Note about site build using SF feature.
+            </p>
+        </div>
+
+        <div class="page">
+            <h2>
+                Second project (details are under NDA)
+            </h2>
+            <p>
+                <img src="images/second-project.png" width="800px">
+            </p>
+            <p>
+                One of features: ranking, where distance was one of factors.
+            </p>
+            <p>
+                Note for future devs - nice task:
+            </p>
+            <ul>
+                <li>REST API - secured</li>
+                <li>Implemented Comparable And Iterable interfaces for sorting and Ranking</li>
+                <li>Serialization workaround</li>
+                <li>Inheritance</li>
+            </ul>
+    
+            <h2>
+                Well organized project:
+            </h2>
+            <ul>
+                <li>CI (Including descructive changes)</li>
+                <li>Static Analisys</li>                 
+            </ul>
+        </div>
+
+        <div class="page">
+            <h1>Why salesforce platform is great?</h1>
+            <p>
+                <img src="images/why-salesforce-platform-is-great.jpg" width="800px">
+            </p>
+            <p>
+                Some details for ones, who knows programming, at least alrady taken cource "GIS-programming".
+            </p>
+            <ul>
+                <li>One of the oldest cloud</li>
+                <li>API first design for any integration</li>
+                <li>A lot of features already implemented</li>
+            </ul>
+        </div>
+
+        <div class="page">
+            <h1>
+                Development
+            </h1>
+            <p>
+                <img src="images/no-software.jpg" width="800px">
+            </p>
+            <p>All possiblitites for Development</p> 
+            <ul>
+                <li>No Code</li>
+                <li>Visual Code</li>
+                <li>Low Code</li>
+                <li>A lot of code</li>
+            </ul>
+    
+            <p>
+                And that's why platform is great for the newcomers: <br>
+                Learning curve is not steep.
+            </p>
+        </div>
+
+        <div class="page">
+            <h1>
+                Job possibilites for GIS students
+            </h1>
+            <p>
+                <img src="images/gis-jobs.jpg" width="800px">
+            </p>
+            <h2>
+                Number of jobs in GIS is quite limited.
+            </h2>
+            <p>
+                Ask auditory: Why?
+            </p>
+
+        </div>
+
+
+        <div class="page">
+            <h1>
+                Salesforce jobs opportunities worlwide
+            </h1>
+            <p>
+                <img src="images/salesforce-jobs-worldwide.jpg" width="800px">
+            </p>
+            <p>
+                Salesforce saw a 38% rise in its jobs listings from 2020-2021 and 4.2M jobs will be created in the Salesforce ecosystem by 2024. 
+            </p>
+            <p>
+                Note: Salesforce as platform can count on developer job, compare to other platforms.
+            </p>
+        </div>
+
+
+        <div class="page">
+            <h1>
+                Salesforce jobs opportunities Locally
+            </h1>
+            <p>
+                <img src="images/salesforce-jobs-locally.jpg" width="800px">                
+            </p>
+
+        </div>
+
+        <div class="page">
+            <h1>
+                VRP Conslulting and Learning Center
+            </h1>
+            <p>
+                <img src="images/vrp.jpg" width="800px">
+            </p>
+            <p>
+                Link to the Next Presentation.
+            </p>
+    
+        </div>
+	</body>
+</html>
